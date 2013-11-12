@@ -21,6 +21,8 @@
 		576DBD6918327918007D1C9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576DBD4B18327918007D1C9A /* UIKit.framework */; };
 		576DBD7118327918007D1C9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 576DBD6F18327918007D1C9A /* InfoPlist.strings */; };
 		576DBD7318327918007D1C9A /* testAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576DBD7218327918007D1C9A /* testAppTests.m */; };
+		576DBD7D183284C2007D1C9A /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576DBD7C183284C2007D1C9A /* AddEvent.xib */; };
+		576DBD801832850A007D1C9A /* AddEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576DBD7F1832850A007D1C9A /* AddEventController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		576DBD6E18327918007D1C9A /* testAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testAppTests-Info.plist"; sourceTree = "<group>"; };
 		576DBD7018327918007D1C9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		576DBD7218327918007D1C9A /* testAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAppTests.m; sourceTree = "<group>"; };
+		576DBD7C183284C2007D1C9A /* AddEvent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
+		576DBD7E1832850A007D1C9A /* AddEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventController.h; sourceTree = "<group>"; };
+		576DBD7F1832850A007D1C9A /* AddEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				576DBD5D18327918007D1C9A /* ViewController.m */,
 				576DBD5F18327918007D1C9A /* Images.xcassets */,
 				576DBD4E18327918007D1C9A /* Supporting Files */,
+				576DBD7C183284C2007D1C9A /* AddEvent.xib */,
+				576DBD7E1832850A007D1C9A /* AddEventController.h */,
+				576DBD7F1832850A007D1C9A /* AddEventController.m */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			files = (
 				576DBD6018327918007D1C9A /* Images.xcassets in Resources */,
 				576DBD5218327918007D1C9A /* InfoPlist.strings in Resources */,
+				576DBD7D183284C2007D1C9A /* AddEvent.xib in Resources */,
 				576DBD5B18327918007D1C9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +261,7 @@
 				576DBD5E18327918007D1C9A /* ViewController.m in Sources */,
 				576DBD5818327918007D1C9A /* AppDelegate.m in Sources */,
 				576DBD5418327918007D1C9A /* main.m in Sources */,
+				576DBD801832850A007D1C9A /* AddEventController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
