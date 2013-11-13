@@ -15,11 +15,11 @@
 
 @end
 
-@interface AddEventController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate>
+@interface AddEventController : UIViewController <UITextFieldDelegate>
 {
+    id<AddEventDelegate> delegate;
     IBOutlet UITextField *newEventText;
     IBOutlet UIDatePicker *datePicker;
-    id<AddEventDelegate> delegate;
     NSString *newEventSaved;
     NSString *dateString;
 }
@@ -28,6 +28,6 @@
 -(IBAction)onPick:(id)sender;
 -(IBAction)onSave:(id)sender;
 
-@property id<AddEventDelegate> delegate;
+@property (strong) id<AddEventDelegate> delegate;
 
 @end

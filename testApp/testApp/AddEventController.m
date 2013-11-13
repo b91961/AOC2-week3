@@ -63,13 +63,15 @@
                                   cancelButtonTitle:@"Close"
                                   otherButtonTitles:nil];
             [alert show];
+            NSLog(@"Save pressed with empty text field");
             
         }
         else if ([newEventText.text length] >= 1)
         {
             NSLog(@"Save was pressed");
             NSLog(@"%@", newEventSaved);
-            // Grabs _eventSaved and dateText
+            
+            // delegate that passes eventSaved and dateSaved to ViewController
             [delegate eventSaved:newEventSaved dateSaved:dateString];
             
             [self dismissViewControllerAnimated:TRUE completion:nil];
@@ -91,7 +93,7 @@
         DatePicker.minimumDate = [NSDate date];
         NSDate *datePicked = [DatePicker date];
         if(datePicked != nil)
-    {
+        {
             // Format the date
             NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
             if (dateFormat != nil)
@@ -101,7 +103,6 @@
             dateString = [dateFormat stringFromDate:datePicked];
             NSLog(@"%@", dateString);
         }
-        
     }
 }
 

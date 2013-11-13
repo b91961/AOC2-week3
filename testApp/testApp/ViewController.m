@@ -41,10 +41,11 @@
 -(void)eventSaved:(NSString*)EventSaved dateSaved:(NSString *)DateSaved
 {
     // Add event text to text field and if event is present then append new text.
-    NSString *eventText = [NSString stringWithFormat:@"\n\nNew Event: %@\n%@", EventSaved, DateSaved];
-    if ([newEvents.text isEqualToString:@""])
+    firstEventText = [NSString stringWithFormat:@"New Event: %@\n%@", EventSaved, DateSaved];
+    eventText = [NSString stringWithFormat:@"\n\nNew Event: %@\n%@", EventSaved, DateSaved];
+    if ([newEvents.text isEqualToString:@"All the events go here..."])
     {
-        newEvents.text = [NSString stringWithFormat:@"\nNew Event: %@\n%@", EventSaved, DateSaved];
+        newEvents.text = firstEventText;
     }
     else
     {

@@ -12,6 +12,8 @@
 @interface ViewController : UIViewController <AddEventDelegate>
 
 {
+    NSString *eventText;
+    NSString *firstEventText;
     IBOutlet UITextView *newEvents;
 }
 
